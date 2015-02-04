@@ -18,6 +18,6 @@ int main()
 {
     std::vector<int> vec{1, 2, 3, 4, 5};
 
-    apply(static_cast<Func_pointer<vector<int>::iterator,Func>>(std::for_each), vec, [](int a) {std::cout << a << std::endl;});
+    apply(static_cast<Func_pointer<vector<int>::iterator,Func>>(std::for_each), vec, [](const int& a) {std::cout << a << std::endl;});
 
 }
